@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 const webpackConfig = {
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     filename: '[name].bundle.js',
     path: __dirname + '/dist',
@@ -15,14 +15,14 @@ const webpackConfig = {
   },
 
   resolve: {
-    extensions: ['.ts', '.js', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
   },
 
-  plugins: [new HtmlWebpackPlugin({ title: 'CHANGEME' }), new webpack.HotModuleReplacementPlugin()],
+  plugins: [new HtmlWebpackPlugin({ template: 'src/index.html.ejs' }), new webpack.HotModuleReplacementPlugin()],
 
   module: {
     rules: [
-      { test: /\.ts$/, loader: 'awesome-typescript-loader' },
+      { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
       {
         test: /\.css$/,

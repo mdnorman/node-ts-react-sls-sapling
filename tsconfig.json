@@ -6,6 +6,7 @@
     "module": "commonjs",
     "target": "es5",
     "lib": ["es6", "dom"],
+    "jsx": "react",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -15,7 +16,7 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "files": ["./node_modules/@types/jasmine/index.d.ts", "./node_modules/@types/node/index.d.ts"],
   "exclude": ["dist", "node_modules", "examples", "spec"]
 }

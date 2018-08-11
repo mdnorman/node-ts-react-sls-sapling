@@ -4,6 +4,7 @@
     "module": "commonjs",
     "target": "es5",
     "lib": ["es6"],
+    "jsx": "react",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "noImplicitReturns": true,
@@ -13,5 +14,5 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "../out"
   },
-  "include": ["./**/*.ts"]
+  "include": ["./**/*.ts", "./**/*.tsx"]
 }
