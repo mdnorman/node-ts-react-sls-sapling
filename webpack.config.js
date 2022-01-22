@@ -23,6 +23,7 @@ const webpackConfig = (env, argv) => {
     entry: './src/index.tsx',
     output: {
       filename: '[name].[contenthash].bundle.js',
+      publicPath: '/',
     },
 
     devtool: 'source-map',
