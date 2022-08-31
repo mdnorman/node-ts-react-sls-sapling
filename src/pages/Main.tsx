@@ -1,3 +1,3 @@
 import * as React from 'react';
 
-export const Main = () => <div />;
+export const Main = () => <>Main Page</>;
