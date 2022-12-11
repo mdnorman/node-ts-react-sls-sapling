@@ -8,6 +8,7 @@
     "module": "commonjs",
     "target": "es2015",
     "lib": ["es6", "dom", "esnext.asynciterable"],
+    "jsx": "react",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "emitDecoratorMetadata": true,
@@ -20,7 +21,7 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
-  "include": ["./src/**/*.ts"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
   "files": ["./node_modules/@types/node/index.d.ts"],
   "exclude": ["dist", "node_modules", "examples", "spec"]
 }

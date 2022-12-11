@@ -20,7 +20,7 @@ const webpackConfig = (env, argv) => {
   }
 
   return {
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     output: {
       filename: '[name].[contenthash].bundle.js',
       publicPath: '/',
@@ -56,7 +56,7 @@ const webpackConfig = (env, argv) => {
 
     module: {
       rules: [
-        { test: /\.ts?$/, loader: 'ts-loader' },
+        { test: /\.tsx?$/, loader: 'ts-loader' },
         { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
         {
           test: /\.css$/,
